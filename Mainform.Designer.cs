@@ -32,7 +32,6 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.TextInput = new System.Windows.Forms.RichTextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.button2 = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -41,7 +40,8 @@
             this.TranslateFrom = new System.Windows.Forms.ComboBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.TextDisplay = new System.Windows.Forms.RichTextBox();
+            this.TextInput = new System.Windows.Forms.TextBox();
+            this.TextDisplay = new System.Windows.Forms.TextBox();
             this.panel4.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -88,19 +88,6 @@
             this.panel2.Padding = new System.Windows.Forms.Padding(10);
             this.panel2.Size = new System.Drawing.Size(884, 225);
             this.panel2.TabIndex = 12;
-            // 
-            // TextInput
-            // 
-            this.TextInput.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(81)))), ((int)(((byte)(81)))), ((int)(((byte)(81)))));
-            this.TextInput.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.TextInput.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TextInput.ForeColor = System.Drawing.Color.Silver;
-            this.TextInput.Location = new System.Drawing.Point(11, 12);
-            this.TextInput.Margin = new System.Windows.Forms.Padding(2);
-            this.TextInput.Name = "TextInput";
-            this.TextInput.Size = new System.Drawing.Size(861, 201);
-            this.TextInput.TabIndex = 11;
-            this.TextInput.Text = "";
             // 
             // panel1
             // 
@@ -203,18 +190,29 @@
             this.panel3.Size = new System.Drawing.Size(884, 225);
             this.panel3.TabIndex = 13;
             // 
+            // TextInput
+            // 
+            this.TextInput.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(81)))), ((int)(((byte)(81)))), ((int)(((byte)(81)))));
+            this.TextInput.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.TextInput.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.TextInput.ForeColor = System.Drawing.Color.Silver;
+            this.TextInput.Location = new System.Drawing.Point(12, 12);
+            this.TextInput.Multiline = true;
+            this.TextInput.Name = "TextInput";
+            this.TextInput.Size = new System.Drawing.Size(860, 200);
+            this.TextInput.TabIndex = 12;
+            // 
             // TextDisplay
             // 
             this.TextDisplay.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(81)))), ((int)(((byte)(81)))), ((int)(((byte)(81)))));
             this.TextDisplay.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.TextDisplay.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TextDisplay.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.TextDisplay.ForeColor = System.Drawing.Color.White;
-            this.TextDisplay.Location = new System.Drawing.Point(13, 12);
-            this.TextDisplay.Margin = new System.Windows.Forms.Padding(2);
+            this.TextDisplay.Location = new System.Drawing.Point(12, 13);
+            this.TextDisplay.Multiline = true;
             this.TextDisplay.Name = "TextDisplay";
-            this.TextDisplay.Size = new System.Drawing.Size(860, 201);
-            this.TextDisplay.TabIndex = 11;
-            this.TextDisplay.Text = "";
+            this.TextDisplay.Size = new System.Drawing.Size(860, 200);
+            this.TextDisplay.TabIndex = 13;
             // 
             // Mainform
             // 
@@ -237,11 +235,13 @@
             this.Text = "Zachitect.com • Multi-Language Translation Tool";
             this.panel4.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -250,16 +250,16 @@
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.RichTextBox TextInput;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.RichTextBox TextDisplay;
         private System.Windows.Forms.Label LabelInfo;
         private System.Windows.Forms.ComboBox TranslateTo;
         private System.Windows.Forms.ComboBox TranslateFrom;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.TextBox TextInput;
+        private System.Windows.Forms.TextBox TextDisplay;
     }
 }
 

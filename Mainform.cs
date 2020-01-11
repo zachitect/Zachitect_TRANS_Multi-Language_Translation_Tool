@@ -169,7 +169,7 @@ namespace Zachitect_TRANS
                     {
                         displayresult[i] = res.trans_result[i].dst;
                     }
-                    this.TextDisplay.Text = string.Join("\n",displayresult);
+                    this.TextDisplay.Text = string.Join(Environment.NewLine + Environment.NewLine, displayresult);
                 }
             }
             catch
